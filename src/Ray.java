@@ -1,5 +1,7 @@
+import Things.Ground;
+import Things.Sphere;
+
 import java.lang.Math;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 
 public class Ray {

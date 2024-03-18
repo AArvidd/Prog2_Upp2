@@ -1,3 +1,5 @@
+package Things;
+
 public class Ground {
     private float groundZ;
     private float reflectivity;

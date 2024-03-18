@@ -1,3 +1,5 @@
+package Things;
+
 public class Sphere {
 
     private float X, Y, Z;

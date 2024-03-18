@@ -1,3 +1,6 @@
+import Things.Ground;
+import Things.Sphere;
+
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.awt.Color;
