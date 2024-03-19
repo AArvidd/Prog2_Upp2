@@ -1,6 +1,3 @@
-import Things.Ground;
-import Things.Sphere;
-
 import java.lang.Math;
 import java.util.ArrayList;
 
