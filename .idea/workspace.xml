@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73c417e7-5250-41bb-85e3-a712218b4790" name="Changes" comment="starger wreriting the coad">
-      <change afterPath="$PROJECT_DIR$/src/Sphere.java" afterDir="false" />
+    <list default="true" id="73c417e7-5250-41bb-85e3-a712218b4790" name="Changes" comment="rewrote Sphere">
+      <change afterPath="$PROJECT_DIR$/src/Things/Ground.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GeneralStuff/Vector3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GeneralStuff/Vector3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ground.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Things/Ground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ground.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Things/Sphere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Things/Sphere.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Things/Thing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Things/Thing.java" afterDir="false" />
     </list>
@@ -28,6 +29,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AArvidd&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="b017174e-ccb6-4324-9b4e-3b729dcf7422" />
+        <option name="url" value="https://github.com/AArvidd/Prog2_Upp2.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -76,7 +91,8 @@
       <workItem from="1710248230096" duration="3464000" />
       <workItem from="1710694003242" duration="3067000" />
       <workItem from="1710754298999" duration="2134000" />
-      <workItem from="1710852739910" duration="2747000" />
+      <workItem from="1710852739910" duration="2936000" />
+      <workItem from="1711308803548" duration="7229000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -94,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710756637600</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="rewrote Sphere">
+      <option name="closed" value="true" />
+      <created>1710856522425</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710856522425</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +127,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start" />
     <MESSAGE value="starger wreriting the coad" />
-    <option name="LAST_COMMIT_MESSAGE" value="starger wreriting the coad" />
+    <MESSAGE value="rewrote Sphere" />
+    <option name="LAST_COMMIT_MESSAGE" value="rewrote Sphere" />
   </component>
 </project>

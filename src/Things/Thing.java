@@ -14,11 +14,11 @@ public class Thing {
         this.color1 = color1;
     }
 
-    protected Vector3 reflect(Vector3 position, Vector3 incoming){
+    public Vector3 reflect(Vector3 position, Vector3 incoming){
         return new Vector3(0,0,0);
     }
 
-    protected float findIntersection(Vector3 origin, Vector3 direction){
+    public float findIntersection(Vector3 origin, Vector3 direction){
         return 0;
     }
 
