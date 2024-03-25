@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73c417e7-5250-41bb-85e3-a712218b4790" name="Changes" comment="rewrote Sphere">
-      <change afterPath="$PROJECT_DIR$/src/Things/Ground.java" afterDir="false" />
+    <list default="true" id="73c417e7-5250-41bb-85e3-a712218b4790" name="Changes" comment="rewrote everything">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GeneralStuff/Vector3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GeneralStuff/Vector3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ground.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Things/Sphere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Things/Sphere.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Things/Thing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Things/Thing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Things/Ground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Things/Ground.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +88,8 @@
       <workItem from="1710694003242" duration="3067000" />
       <workItem from="1710754298999" duration="2134000" />
       <workItem from="1710852739910" duration="2936000" />
-      <workItem from="1711308803548" duration="7229000" />
+      <workItem from="1711308803548" duration="7264000" />
+      <workItem from="1711356817774" duration="4634000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -118,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710856522425</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="rewrote everything">
+      <option name="closed" value="true" />
+      <created>1711316139385</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711316139385</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +133,7 @@
     <MESSAGE value="start" />
     <MESSAGE value="starger wreriting the coad" />
     <MESSAGE value="rewrote Sphere" />
-    <option name="LAST_COMMIT_MESSAGE" value="rewrote Sphere" />
+    <MESSAGE value="rewrote everything" />
+    <option name="LAST_COMMIT_MESSAGE" value="rewrote everything" />
   </component>
 </project>

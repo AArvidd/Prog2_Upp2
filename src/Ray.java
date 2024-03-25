@@ -34,6 +34,7 @@ public class Ray {
 
         float[] intersection = findIntersection();
 
+        //System.out.println(intersection[0] + " " + intersection[1]);
 
         if (intersection[1] == -1) {
             return camera.getSkyboxColor();
@@ -50,12 +51,10 @@ public class Ray {
         Vector3 reflectDir;
         float reflectivity;
 
-
         Thing hit = scene.get((int) intersection[1]);
         directColor = hit.getColor(intersectionPos);
         reflectDir = hit.reflect(intersectionPos, this.direction);
         reflectivity = hit.getReflectivity();
-
 
         if (depth == 0 || reflectivity == 0)
             return directColor;
@@ -69,7 +68,6 @@ public class Ray {
         int b = (int) (directColor.z * (1 - reflectivity) + reflectColor.z * reflectivity);
 
         Vector3 color = new Vector3(r, g, b);
-        //System.out.println("r: " + color.x + " g: " + color.y + " b: " + color.z);
         color.limitTo(255);
 
         return color;
@@ -78,6 +76,9 @@ public class Ray {
 
     public float[] findIntersection() {
         ArrayList<Float> intersectionLength = new ArrayList<>();
+
+        if (scene.isEmpty())
+            return new float[] {-1, -1};
 
         for (int i = 0; i < scene.size(); i++) {
             Thing current = scene.get(i);
@@ -105,6 +106,9 @@ public class Ray {
                 shortestIndex = i;
             }
         }
+
+        if (shortest == -1)
+            shortestIndex = -1;
 
         return new float[]{shortest, shortestIndex};
 

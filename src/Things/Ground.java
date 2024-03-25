@@ -25,7 +25,8 @@ public class Ground extends Thing {
         );
     }
 
-    public float findIntersect(Vector3 origin, Vector3 direction){
+    @Override
+    public float findIntersection(Vector3 origin, Vector3 direction){
 
         float length = (position.z - origin.z) / direction.z;
 
