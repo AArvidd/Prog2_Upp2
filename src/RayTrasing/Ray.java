@@ -1,5 +1,7 @@
-import GeneralStuff.Vector3;
-import Things.*;
+package RayTrasing;
+
+import RayTrasing.GeneralStuff.Vector3;
+import RayTrasing.Things.*;
 
 import java.util.ArrayList;
 
@@ -56,7 +58,7 @@ public class Ray {
         reflectDir = hit.reflect(intersectionPos, this.direction);
         reflectivity = hit.getReflectivity();
 
-        if (depth == 0 || reflectivity == 0)
+        if (depth <= 0 || reflectivity == 0)
             return directColor;
 
 

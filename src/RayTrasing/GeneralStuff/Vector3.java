@@ -1,4 +1,4 @@
-package GeneralStuff;
+package RayTrasing.GeneralStuff;
 
 public class Vector3 {
 

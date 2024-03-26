@@ -1,6 +1,6 @@
-package Things;
+package RayTrasing.Things;
 
-import GeneralStuff.Vector3;
+import RayTrasing.GeneralStuff.Vector3;
 
 public class Sphere extends Thing{
 
@@ -72,7 +72,7 @@ public class Sphere extends Thing{
         if (Double.isNaN(t1) && Double.isNaN(t2))
             return -1;
 
-        if (t1 < 0 || t2 < 0)
+        if (t1 <= 0 || t2 <= 0)
             return -1;
 
 

@@ -1,5 +1,7 @@
-import GeneralStuff.Vector3;
-import Things.*;
+package RayTrasing;
+
+import RayTrasing.GeneralStuff.Vector3;
+import RayTrasing.Things.*;
 
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
@@ -70,7 +72,6 @@ public class Camera {
             for (int y = 0; y < pixelWidth; y++) {
                 Ray current = new Ray(3, this.position, pixelGrid[x][y], visible,this);
                 Vector3 color = current.castRay();
-                //System.out.println("r: " + color.x + " g: " + color.y + " b: " + color.z);
                 Color temp = new Color((int)color.x, (int)color.y, (int)color.z);
                 image.setRGB(x, y, temp.getRGB());
             }

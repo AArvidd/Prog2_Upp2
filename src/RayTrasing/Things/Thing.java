@@ -1,6 +1,6 @@
-package Things;
+package RayTrasing.Things;
 
-import GeneralStuff.Vector3;
+import RayTrasing.GeneralStuff.Vector3;
 
 public class Thing {
 

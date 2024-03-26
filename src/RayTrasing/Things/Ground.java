@@ -1,6 +1,6 @@
-package Things;
+package RayTrasing.Things;
 
-import GeneralStuff.Vector3;
+import RayTrasing.GeneralStuff.Vector3;
 
 public class Ground extends Thing {
 
@@ -30,7 +30,7 @@ public class Ground extends Thing {
 
         float length = (position.z - origin.z) / direction.z;
 
-        if(length < 0)
+        if(length <= 0)
             length = -1;
 
         return length;
