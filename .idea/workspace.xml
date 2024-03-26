@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73c417e7-5250-41bb-85e3-a712218b4790" name="Changes" comment="fixt moast bugs">
-      <change afterPath="$PROJECT_DIR$/src/Interactions/PanelInteract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RayTrasing/MainSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interactions/InteractSquare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interactions/Square.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RayTrasing/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GeneralStuff/Vector3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RayTrasing/GeneralStuff/Vector3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interactions/PanelInteract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/PanelInteract.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainSystem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RayTrasing/Ray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Things/Ground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RayTrasing/Things/Ground.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Things/Sphere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RayTrasing/Things/Sphere.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Things/Thing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RayTrasing/Things/Thing.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +103,7 @@
       <workItem from="1711308803548" duration="7264000" />
       <workItem from="1711356817774" duration="4692000" />
       <workItem from="1711457289247" duration="3831000" />
+      <workItem from="1711477003607" duration="3807000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
