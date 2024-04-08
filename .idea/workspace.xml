@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73c417e7-5250-41bb-85e3-a712218b4790" name="Changes" comment="fixt moast bugs">
-      <change afterPath="$PROJECT_DIR$/src/Interactions/InteractSquare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interactions/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interactions/SphereCreator/SphereWizard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interactions/InteractSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/InteractSquare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interactions/PanelInteract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/PanelInteract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interactions/Square.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,6 +105,7 @@
       <workItem from="1711356817774" duration="4692000" />
       <workItem from="1711457289247" duration="3831000" />
       <workItem from="1711477003607" duration="3807000" />
+      <workItem from="1712562854040" duration="4246000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />

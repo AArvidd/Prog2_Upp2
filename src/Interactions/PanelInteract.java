@@ -36,8 +36,8 @@ public class PanelInteract extends JFrame {
         }
     }
 
-    public void addSphere(Vector3 position, float radius, float reflectivity, Vector3 color){
-        scene.add(new Sphere(position, radius, reflectivity, color));
+    public void addThin(Thing thing){
+        scene.add(thing);
     }
 
 }
