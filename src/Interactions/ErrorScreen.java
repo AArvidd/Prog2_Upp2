@@ -1,29 +1,32 @@
-package Interactions.SphereCreator;
-
-import Interactions.Wizard;
+package Interactions;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-public class Confirmation extends JPanel implements MouseListener {
+public class ErrorScreen extends JFrame implements MouseListener {
 
-    Wizard frame;
+    private int size = 300;
 
-    public Confirmation(Wizard frame){
-        this.frame = frame;
+    public ErrorScreen(){
+        this.setTitle("Error");
+        this.setBounds(500, 300, size, size);
+        this.setResizable(false);
+        this.setLayout(new FlowLayout());
+        this.getContentPane().setBackground(Color.red);
 
-        this.add(new JLabel("Confirm"));
-        this.setBackground(Color.gray);
-        this.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        this.add(new JLabel("only numbers are permitted"));
+
         this.addMouseListener(this);
+
+        this.setVisible(true);
 
     }
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        frame.reade();
+        this.setVisible(false);
     }
 
     @Override

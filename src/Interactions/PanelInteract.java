@@ -38,6 +38,7 @@ public class PanelInteract extends JFrame {
 
     public void addThin(Thing thing){
         scene.add(thing);
+        System.out.println("hej");
     }
 
 }

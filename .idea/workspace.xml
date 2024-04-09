@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73c417e7-5250-41bb-85e3-a712218b4790" name="Changes" comment="fixt moast bugs">
-      <change afterPath="$PROJECT_DIR$/src/Interactions/SphereCreator/SphereWizard.java" afterDir="false" />
+    <list default="true" id="73c417e7-5250-41bb-85e3-a712218b4790" name="Changes" comment="adding wizards">
+      <change afterPath="$PROJECT_DIR$/src/Interactions/ErrorScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interactions/Wizard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interactions/InteractSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/InteractSquare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interactions/PanelInteract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/PanelInteract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interactions/Square.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interactions/SphereCreator/Confirmation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/SphereCreator/Confirmation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interactions/SphereCreator/SphereWizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/SphereCreator/SphereWizard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +105,8 @@
       <workItem from="1711356817774" duration="4692000" />
       <workItem from="1711457289247" duration="3831000" />
       <workItem from="1711477003607" duration="3807000" />
-      <workItem from="1712562854040" duration="4246000" />
+      <workItem from="1712562854040" duration="4402000" />
+      <workItem from="1712663402293" duration="3803000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -147,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711361535194</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="adding wizards">
+      <option name="closed" value="true" />
+      <created>1712567291655</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712567291655</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +168,7 @@
     <MESSAGE value="rewrote Sphere" />
     <MESSAGE value="rewrote everything" />
     <MESSAGE value="fixt moast bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixt moast bugs" />
+    <MESSAGE value="adding wizards" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding wizards" />
   </component>
 </project>
