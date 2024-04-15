@@ -2,6 +2,7 @@ package Interactions;
 
 import RayTrasing.Camera;
 import RayTrasing.GeneralStuff.Vector3;
+import RayTrasing.MainSystem;
 import RayTrasing.Things.Sphere;
 import RayTrasing.Things.Thing;
 
@@ -24,21 +25,20 @@ public class PanelInteract extends JFrame {
         this.setLayout(new FlowLayout());
 
         this.add(new InteractSquare("Create Sphere", 1, this));
+        this.add(new InteractSquare("Create Plane", 2, this));
+        this.add(new InteractSquare("Run program", 0, this));
         this.getContentPane().setBackground(Color.red);
 
         this.setVisible(true);
 
     }
 
-    public void CreateNew(int choice){
-        switch (choice){
-            //case 0 -> TODO make a system to frame a new frame where the spesifications of a thing kan be spesified
-        }
-    }
-
     public void addThin(Thing thing){
         scene.add(thing);
-        System.out.println("hej");
+    }
+
+    public void run(){
+        new MainSystem(scene);
     }
 
 }

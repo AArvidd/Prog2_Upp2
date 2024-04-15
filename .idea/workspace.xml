@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73c417e7-5250-41bb-85e3-a712218b4790" name="Changes" comment="adding wizards">
-      <change afterPath="$PROJECT_DIR$/src/Interactions/ErrorScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interactions/Wizard.java" afterDir="false" />
+    <list default="true" id="73c417e7-5250-41bb-85e3-a712218b4790" name="Changes" comment="made a system to generata a sphere thrue inputs">
+      <change afterPath="$PROJECT_DIR$/src/Interactions/Wizards/PlaneWizard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interactions/ErrorScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/Wizards/ErrorScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interactions/InteractSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/InteractSquare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interactions/PanelInteract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/PanelInteract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interactions/SphereCreator/Confirmation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/SphereCreator/Confirmation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interactions/SphereCreator/SphereWizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/SphereCreator/SphereWizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interactions/SphereCreator/Confirmation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/Wizards/Confirmation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interactions/SphereCreator/SphereWizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/Wizards/SphereWizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interactions/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/Wizards/Wizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RayTrasing/MainSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RayTrasing/MainSystem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +109,8 @@
       <workItem from="1711457289247" duration="3831000" />
       <workItem from="1711477003607" duration="3807000" />
       <workItem from="1712562854040" duration="4402000" />
-      <workItem from="1712663402293" duration="3803000" />
+      <workItem from="1712663402293" duration="3930000" />
+      <workItem from="1713167651276" duration="4760000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -156,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712567291655</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="made a system to generata a sphere thrue inputs">
+      <option name="closed" value="true" />
+      <created>1712667338369</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712667338370</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +181,7 @@
     <MESSAGE value="rewrote everything" />
     <MESSAGE value="fixt moast bugs" />
     <MESSAGE value="adding wizards" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding wizards" />
+    <MESSAGE value="made a system to generata a sphere thrue inputs" />
+    <option name="LAST_COMMIT_MESSAGE" value="made a system to generata a sphere thrue inputs" />
   </component>
 </project>

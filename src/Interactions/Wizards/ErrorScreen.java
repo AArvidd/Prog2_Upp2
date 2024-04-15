@@ -1,4 +1,4 @@
-package Interactions;
+package Interactions.Wizards;
 
 import javax.swing.*;
 import java.awt.*;
@@ -9,14 +9,16 @@ public class ErrorScreen extends JFrame implements MouseListener {
 
     private int size = 300;
 
-    public ErrorScreen(){
+    public ErrorScreen(Exception e){
         this.setTitle("Error");
         this.setBounds(500, 300, size, size);
         this.setResizable(false);
-        this.setLayout(new FlowLayout());
+        this.setLayout(new GridLayout(20, 1));
         this.getContentPane().setBackground(Color.red);
 
-        this.add(new JLabel("only numbers are permitted"));
+        this.add(new JLabel("Invalid input", SwingConstants.CENTER));
+
+        this.add (new JLabel(e.getMessage(), SwingConstants.CENTER));
 
         this.addMouseListener(this);
 

@@ -1,8 +1,6 @@
-package Interactions.SphereCreator;
+package Interactions.Wizards;
 
-import Interactions.ErrorScreen;
 import Interactions.PanelInteract;
-import Interactions.Wizard;
 import RayTrasing.GeneralStuff.Vector3;
 import RayTrasing.Things.Sphere;
 
@@ -11,7 +9,7 @@ import java.awt.*;
 import java.util.ArrayList;
 
 public class SphereWizard extends Wizard {
-    int size = 300;
+
 
     PanelInteract manager;
 
@@ -22,9 +20,9 @@ public class SphereWizard extends Wizard {
         this.manager = manager;
 
         this.setTitle("Sphere wizard");
-        this.setBounds(100, 100, size, size);
+        this.setBounds(100, 100, 500, 300);
         this.setResizable(false);
-        this.setLayout(new FlowLayout());
+        this.setLayout(new GridLayout(6,7));
         this.getContentPane().setBackground(Color.red);
 
         this.add(new JLabel("position"));
@@ -44,6 +42,8 @@ public class SphereWizard extends Wizard {
         this.add(posZT);
         inputs.add(posZT);
 
+        this.add(new JLabel(""));
+
         this.add(new JLabel(("radius")));
         JTextField radiusT = new JTextField(5);
         this.add(radiusT);
@@ -54,6 +54,8 @@ public class SphereWizard extends Wizard {
         this.add(reflectivityT);
         inputs.add(reflectivityT);
 
+        this.add(new JLabel(""));
+        this.add(new JLabel(""));
 
         this.add(new JLabel("color"));
 
@@ -73,7 +75,31 @@ public class SphereWizard extends Wizard {
         inputs.add(B);
 
 
+        this.add(new JLabel(""));
+        this.add(new JLabel(""));
+        this.add(new JLabel(""));
+        this.add(new JLabel(""));
+        this.add(new JLabel(""));
+        this.add(new JLabel(""));
+        this.add(new JLabel(""));
+
+
+        this.add(new JLabel(""));
+        this.add(new JLabel(""));
+        this.add(new JLabel(""));
         this.add(new Confirmation(this));
+        this.add(new JLabel(""));
+        this.add(new JLabel(""));
+        this.add(new JLabel(""));
+
+
+        this.add(new JLabel(""));
+        this.add(new JLabel(""));
+        this.add(new JLabel(""));
+        this.add(new JLabel(""));
+        this.add(new JLabel(""));
+        this.add(new JLabel(""));
+        this.add(new JLabel(""));
 
         this.setVisible(true);
     }
@@ -93,17 +119,25 @@ public class SphereWizard extends Wizard {
 
             reflectivity = Float.parseFloat((inputs.get(4).getText()));
 
+            if (reflectivity > 1 || reflectivity < 0){
+                throw new Exception("Invalid reflectivity (must be between 0 and 1)");
+            }
+
             for(int i = 0; i < color.length; i++){
                 color[i] = Integer.parseInt(inputs.get(i+5).getText());
+                if (color[i] < 0 || color[i] > 255){
+                    throw new Exception("Invalid color (must be between 0 and 255)");
+                }
             }
 
 
         }catch (Exception e){
-            new ErrorScreen();
+            new ErrorScreen(e);
             return;
         }
 
         manager.addThin(new Sphere(new Vector3(position[0], position[1], position[2]), radius, reflectivity, new Vector3(color[0], color[1], color[2])));
+        this.setVisible(false);
 
     }
 

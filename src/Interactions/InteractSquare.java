@@ -1,6 +1,7 @@
 package Interactions;
 
-import Interactions.SphereCreator.SphereWizard;
+import Interactions.Wizards.PlaneWizard;
+import Interactions.Wizards.SphereWizard;
 
 import javax.swing.*;
 import java.awt.*;
@@ -26,8 +27,10 @@ public class InteractSquare extends JPanel implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        switch (choice){
-            case 1: new SphereWizard(manager);
+        switch (choice) {
+            case 0 -> manager.run();
+            case 1 -> new SphereWizard(manager);
+            case 2 -> new PlaneWizard(manager);
         }
     }
 

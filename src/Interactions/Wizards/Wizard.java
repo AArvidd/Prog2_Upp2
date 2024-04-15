@@ -1,4 +1,4 @@
-package Interactions;
+package Interactions.Wizards;
 
 import javax.swing.*;
 

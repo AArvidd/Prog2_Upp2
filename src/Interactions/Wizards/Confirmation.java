@@ -1,6 +1,4 @@
-package Interactions.SphereCreator;
-
-import Interactions.Wizard;
+package Interactions.Wizards;
 
 import javax.swing.*;
 import java.awt.*;
