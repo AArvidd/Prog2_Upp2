@@ -38,7 +38,9 @@ public class PanelInteract extends JFrame {
     }
 
     public void run(){
-        new MainSystem(scene);
+        this.setVisible(false);
+        MainSystem main = new MainSystem(scene);
+        new ResultScreen(main.getImage());
     }
 
 }

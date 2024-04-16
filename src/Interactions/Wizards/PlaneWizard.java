@@ -112,8 +112,7 @@ public class PlaneWizard extends Wizard{
 
     public void reade(){
 
-        int[] position = new int[3];
-        float radius;
+        float[] position = new float[3];
         float reflectivity;
         int[] color = new int[6];
         try{

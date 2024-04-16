@@ -106,7 +106,7 @@ public class SphereWizard extends Wizard {
 
     public void reade(){
 
-        int[] position = new int[3];
+        float[] position = new float[3];
         float radius;
         float reflectivity;
         int[] color = new int[3];

@@ -9,7 +9,10 @@ import RayTrasing.GeneralStuff.Vector3;
 import RayTrasing.Things.*;
 
 public class MainSystem {
-    public  MainSystem(ArrayList<Thing> sean){
+
+    private BufferedImage image;
+
+    public MainSystem(ArrayList<Thing> sean){
 
         /*
         ArrayList<Thing> sean = new ArrayList<>();
@@ -22,7 +25,7 @@ public class MainSystem {
 
         Camera main = new Camera(new Vector3(0, 0, 0), 2000, 2000, 2, sean, new Vector3(0, 0, 0));
 
-        BufferedImage image = main.makeImage();
+        image = main.makeImage();
         try {
             File output = new File("outputJava.png");
             ImageIO.write(image, "png", output);
@@ -31,4 +34,9 @@ public class MainSystem {
         }
 
     }
+
+    public BufferedImage getImage(){
+        return image;
+    }
+
 }
