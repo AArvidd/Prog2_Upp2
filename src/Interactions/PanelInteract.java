@@ -1,9 +1,8 @@
 package Interactions;
 
+import Interactions.Wizards.ErrorScreen;
 import RayTrasing.Camera;
-import RayTrasing.GeneralStuff.Vector3;
 import RayTrasing.MainSystem;
-import RayTrasing.Things.Sphere;
 import RayTrasing.Things.Thing;
 
 import javax.swing.*;
@@ -15,7 +14,7 @@ public class PanelInteract extends JFrame {
     private int size= 500;
 
     ArrayList<Thing> scene = new ArrayList<>();
-    Camera main;
+    Camera camera;
 
     public PanelInteract(){
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -26,6 +25,7 @@ public class PanelInteract extends JFrame {
 
         this.add(new InteractSquare("Create Sphere", 1, this));
         this.add(new InteractSquare("Create Plane", 2, this));
+        this.add(new InteractSquare("Create Camera", 3, this));
         this.add(new InteractSquare("Run program", 0, this));
         this.getContentPane().setBackground(Color.red);
 
@@ -37,9 +37,17 @@ public class PanelInteract extends JFrame {
         scene.add(thing);
     }
 
+    public void addCamera(Camera camera){
+        this.camera = camera;
+    }
+
     public void run(){
+        if(camera == null){
+            new ErrorScreen(new Exception("Camera does not exist"));
+            return;
+        }
         this.setVisible(false);
-        MainSystem main = new MainSystem(scene);
+        MainSystem main = new MainSystem(scene, camera);
         new ResultScreen(main.getImage());
     }
 

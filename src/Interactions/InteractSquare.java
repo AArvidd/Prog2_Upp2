@@ -1,5 +1,6 @@
 package Interactions;
 
+import Interactions.Wizards.CameraWizard;
 import Interactions.Wizards.PlaneWizard;
 import Interactions.Wizards.SphereWizard;
 
@@ -31,6 +32,7 @@ public class InteractSquare extends JPanel implements MouseListener {
             case 0 -> manager.run();
             case 1 -> new SphereWizard(manager);
             case 2 -> new PlaneWizard(manager);
+            case 3 -> new CameraWizard(manager);
         }
     }
 

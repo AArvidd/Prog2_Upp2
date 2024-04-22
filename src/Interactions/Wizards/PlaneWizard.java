@@ -120,9 +120,9 @@ public class PlaneWizard extends Wizard{
                 position[i] = Integer.parseInt(inputs.get(i).getText());
             }
 
-            reflectivity = Float.parseFloat((inputs.get(4).getText()));
+            reflectivity = Float.parseFloat((inputs.get(3).getText()));
 
-            if (reflectivity > 1 || reflectivity < 0){ // todo make reflectivity work
+            if (reflectivity > 1 || reflectivity < 0){
                 throw new Exception("Invalid reflectivity (must be between 0 and 1)");
             }
 

@@ -16,7 +16,7 @@ public class ErrorScreen extends JFrame implements MouseListener {
         this.setLayout(new GridLayout(20, 1));
         this.getContentPane().setBackground(Color.red);
 
-        this.add(new JLabel("Invalid input", SwingConstants.CENTER));
+        this.add(new JLabel("An error occurred", SwingConstants.CENTER));
 
         this.add (new JLabel(e.getMessage(), SwingConstants.CENTER));
 

@@ -6,32 +6,21 @@ import java.awt.image.BufferedImage;
 
 public class ResultScreen extends JFrame {
 
-    //private final BufferedImage image;
     public ResultScreen(BufferedImage image){
-        //this.image = image;
+
+        BufferedImage resizedImage = new BufferedImage(800, 800, BufferedImage.TYPE_INT_RGB);
+        Graphics graphics = resizedImage.createGraphics();
+        graphics.drawImage(image, 0, 0, 800, 800, null);
+        graphics.dispose();
 
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         int height = image.getHeight();
         int width = image.getWidth();
-        this.setSize(width, height);
-        this.add(new myPanel(image));
+        this.setSize(800, 800);
+        this.add(new ResultPanel(resizedImage));
         this.setResizable(false);
         this.setLayout(null);
         this.setVisible(true);
 
     }
-/*
-    @Override
-    public void paintComponents(Graphics g) {
-        super.paintComponents(g);
-        if(image == null) {
-            return;
-        }
-        g.drawImage(image, 0, 0, this);
-        repaint();
-
-
-    }
-
- */
 }

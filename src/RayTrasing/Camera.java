@@ -84,4 +84,9 @@ public class Camera {
     public Vector3 getSkyboxColor() {
         return skyboxColor;
     }
+
+    public void addScene(ArrayList<Thing> scene){
+        this.visible = scene;
+    }
+
 }

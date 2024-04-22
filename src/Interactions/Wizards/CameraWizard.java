@@ -1,26 +1,27 @@
 package Interactions.Wizards;
 
 import Interactions.PanelInteract;
+import RayTrasing.Camera;
 import RayTrasing.GeneralStuff.Vector3;
 import RayTrasing.Things.Sphere;
+import RayTrasing.Things.Thing;
 
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
-public class SphereWizard extends Wizard {
-
+public class CameraWizard extends Wizard{
 
     PanelInteract manager;
 
     ArrayList<JTextField> inputs = new ArrayList<>();
 
-    public SphereWizard(PanelInteract manager){
+    public CameraWizard(PanelInteract manager){
 
         this.manager = manager;
 
         this.setTitle("Sphere wizard");
-        this.setBounds(100, 100, 500, 300);
+        this.setBounds(100, 100, 750, 300);
         this.setResizable(false);
         this.setLayout(new GridLayout(6,7));
         this.getContentPane().setBackground(Color.red);
@@ -42,20 +43,22 @@ public class SphereWizard extends Wizard {
         this.add(posZT);
         inputs.add(posZT);
 
-        this.add(new JLabel(""));
+        this.add(new JLabel("Pixels: "));
 
-        this.add(new JLabel(("radius")));
-        JTextField radiusT = new JTextField(5);
-        this.add(radiusT);
-        inputs.add(radiusT);
+        this.add(new JLabel(("X: ")));
+        JTextField pixelsX = new JTextField(5);
+        this.add(pixelsX);
+        inputs.add(pixelsX);
 
-        this.add(new JLabel("reflectivity"));
-        JTextField reflectivityT = new JTextField(5);
-        this.add(reflectivityT);
-        inputs.add(reflectivityT);
+        this.add(new JLabel("Y: "));
+        JTextField pixelsY = new JTextField(5);
+        this.add(pixelsY);
+        inputs.add(pixelsY);
 
-        this.add(new JLabel(""));
-        this.add(new JLabel(""));
+        this.add(new JLabel("<html>Camera width:<br/>(recommended: 2) </html>"));
+        JTextField CameraWidth = new JTextField(5);
+        this.add(CameraWidth);
+        inputs.add(CameraWidth);
 
         this.add(new JLabel("color"));
 
@@ -102,25 +105,28 @@ public class SphereWizard extends Wizard {
         this.add(new JLabel(""));
 
         this.setVisible(true);
+
     }
 
     public void reade(){
 
         float[] position = new float[3];
-        float radius;
-        float reflectivity;
+        int pixelsX;
+        int  pixelsY;
+        float width;
         int[] color = new int[3];
         try{
             for(int i = 0; i < position.length; i++){
                 position[i] = Integer.parseInt(inputs.get(i).getText());
             }
 
-            radius = Float.parseFloat(inputs.get(3).getText());
+            pixelsX = Integer.parseInt(inputs.get(3).getText());
+            pixelsY = Integer.parseInt(inputs.get(4).getText());
 
-            reflectivity = Float.parseFloat((inputs.get(4).getText()));
+            width = Float.parseFloat(inputs.get(5).getText());
 
-            if (reflectivity > 1 || reflectivity < 0){
-                throw new Exception("Invalid reflectivity (must be between 0 and 1)");
+            if(width < 0){
+                throw new Exception("Invalid width (must be mor than 0)");
             }
 
             for(int i = 0; i < color.length; i++){
@@ -136,7 +142,12 @@ public class SphereWizard extends Wizard {
             return;
         }
 
-        manager.addThin(new Sphere(new Vector3(position[0], position[1], position[2]), radius, reflectivity, new Vector3(color[0], color[1], color[2])));
+        manager.addCamera(new Camera(
+                new Vector3(position[0], position[1], position[2]),
+                pixelsX, pixelsY, width,
+                new ArrayList<>(),
+                new Vector3(color[0], color[1], color[2])
+        ));
         this.setVisible(false);
 
     }

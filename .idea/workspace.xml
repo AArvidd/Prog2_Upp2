@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73c417e7-5250-41bb-85e3-a712218b4790" name="Changes" comment="Compleated SphereWizard and added PlaneWizard and made the panels run the ray tracing program">
-      <change afterPath="$PROJECT_DIR$/src/Interactions/ResultScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interactions/myPanel.java" afterDir="false" />
+    <list default="true" id="73c417e7-5250-41bb-85e3-a712218b4790" name="Changes" comment="added so that resolt si shown">
+      <change afterPath="$PROJECT_DIR$/src/Interactions/Wizards/CameraWizard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interactions/InteractSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/InteractSquare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interactions/PanelInteract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/PanelInteract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interactions/ResultScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/ResultScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interactions/Wizards/ErrorScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/Wizards/ErrorScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interactions/Wizards/PlaneWizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/Wizards/PlaneWizard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interactions/Wizards/SphereWizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/Wizards/SphereWizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interactions/myPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/ResultPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RayTrasing/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RayTrasing/Camera.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RayTrasing/MainSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RayTrasing/MainSystem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +113,9 @@
       <workItem from="1712562854040" duration="4402000" />
       <workItem from="1712663402293" duration="3930000" />
       <workItem from="1713167651276" duration="4936000" />
-      <workItem from="1713267659551" duration="4369000" />
+      <workItem from="1713267659551" duration="4910000" />
+      <workItem from="1713363275400" duration="1034000" />
+      <workItem from="1713773022102" duration="3077000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -175,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713172618309</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added so that resolt si shown">
+      <option name="closed" value="true" />
+      <created>1713273977609</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713273977609</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +204,7 @@
     <MESSAGE value="adding wizards" />
     <MESSAGE value="made a system to generata a sphere thrue inputs" />
     <MESSAGE value="Compleated SphereWizard and added PlaneWizard and made the panels run the ray tracing program" />
-    <option name="LAST_COMMIT_MESSAGE" value="Compleated SphereWizard and added PlaneWizard and made the panels run the ray tracing program" />
+    <MESSAGE value="added so that resolt si shown" />
+    <option name="LAST_COMMIT_MESSAGE" value="added so that resolt si shown" />
   </component>
 </project>
