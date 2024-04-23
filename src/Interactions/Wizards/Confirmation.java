@@ -5,10 +5,12 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+//this class is the button to take in the information in the wizards
 public class Confirmation extends JPanel implements MouseListener {
 
     Wizard frame;
 
+    //constructor
     public Confirmation(Wizard frame){
         this.frame = frame;
 

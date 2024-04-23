@@ -3,18 +3,19 @@ package Interactions.Wizards;
 import Interactions.PanelInteract;
 import RayTrasing.GeneralStuff.Vector3;
 import RayTrasing.Things.Ground;
-import RayTrasing.Things.Sphere;
 
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
+//this class is the panel that the user can define the information to a plane
 public class PlaneWizard extends Wizard{
 
     PanelInteract manager;
 
     ArrayList<JTextField> inputs = new ArrayList<>();
 
+    //constructor
     public PlaneWizard(PanelInteract manager){
 
         this.manager = manager;
@@ -25,25 +26,26 @@ public class PlaneWizard extends Wizard{
         this.setLayout(new GridLayout(6,7));
         this.getContentPane().setBackground(Color.red);
 
-        this.add(new JLabel("position"));
+        //row 1
+        this.add(new JLabel("position:"));
 
-        this.add(new JLabel("X: "));
+        this.add(new JLabel("X:"));
         JTextField posXT = new JTextField(5);
         this.add(posXT);
         inputs.add(posXT);
 
-        this.add(new JLabel("Y: "));
+        this.add(new JLabel("Y:"));
         JTextField posYT = new JTextField(5);
         this.add(posYT);
         inputs.add(posYT);
 
-        this.add(new JLabel("Z: "));
+        this.add(new JLabel("Z:"));
         JTextField posZT = new JTextField(5);
         this.add(posZT);
         inputs.add(posZT);
 
-
-        this.add(new JLabel("reflectivity"));
+        //row 2
+        this.add(new JLabel("reflectivity:"));
         JTextField reflectivityT = new JTextField((5));
         this.add(reflectivityT);
         inputs.add(reflectivityT);
@@ -54,41 +56,43 @@ public class PlaneWizard extends Wizard{
         this.add(new JLabel(""));
         this.add(new JLabel(""));
 
-        this.add(new JLabel("color 1"));
+        //row 3
+        this.add(new JLabel("color 1:"));
 
-        this.add(new JLabel("R1: "));
+        this.add(new JLabel("R1:"));
         JTextField R1 = new JTextField(5);
         this.add(R1);
         inputs.add(R1);
 
-        this.add(new JLabel("G1: "));
+        this.add(new JLabel("G1:"));
         JTextField G1 = new JTextField(5);
         this.add(G1);
         inputs.add(G1);
 
-        this.add(new JLabel("B1: "));
+        this.add(new JLabel("B1:"));
         JTextField B1 = new JTextField(5);
         this.add(B1);
         inputs.add(B1);
 
-        this.add(new JLabel("color 2"));
+        //row 4
+        this.add(new JLabel("color 2:"));
 
-        this.add(new JLabel("R2: "));
+        this.add(new JLabel("R2:"));
         JTextField R2 = new JTextField(5);
         this.add(R2);
         inputs.add(R2);
 
-        this.add(new JLabel("G2: "));
+        this.add(new JLabel("G2:"));
         JTextField G2 = new JTextField(5);
         this.add(G2);
         inputs.add(G2);
 
-        this.add(new JLabel("B2: "));
+        this.add(new JLabel("B2:"));
         JTextField B2 = new JTextField(5);
         this.add(B2);
         inputs.add(B2);
 
-
+        //row 5
         this.add(new JLabel(""));
         this.add(new JLabel(""));
         this.add(new JLabel(""));
@@ -97,7 +101,7 @@ public class PlaneWizard extends Wizard{
         this.add(new JLabel(""));
         this.add(new JLabel(""));
 
-
+        //row 6
         this.add(new JLabel(""));
         this.add(new JLabel(""));
         this.add(new JLabel(""));
@@ -110,6 +114,7 @@ public class PlaneWizard extends Wizard{
 
     }
 
+    //this function reads the text in the text fields and uses it to define a plane
     public void reade(){
 
         float[] position = new float[3];
@@ -139,7 +144,12 @@ public class PlaneWizard extends Wizard{
             return;
         }
 
-        manager.addThin(new Ground(new Vector3(position[0], position[1], position[2]), reflectivity, new Vector3(color[0], color[1], color[2]), new Vector3(color[3], color[4], color[5])));
+        manager.addThin(new Ground(
+                new Vector3(position[0], position[1], position[2]),
+                reflectivity,
+                new Vector3(color[0], color[1], color[2]),
+                new Vector3(color[3], color[4], color[5])
+        ));
         this.setVisible(false);
 
     }

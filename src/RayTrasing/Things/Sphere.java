@@ -2,17 +2,21 @@ package RayTrasing.Things;
 
 import RayTrasing.GeneralStuff.Vector3;
 
+//this class contains all the information and code for spheres
 public class Sphere extends Thing{
 
     float radius;
 
+    //constructor
     public Sphere(Vector3 position, float radius, float reflectivity, Vector3 color){
         super(position, reflectivity, color);
         this.radius = radius;
     }
 
+    //calculates the reflection of an incoming ray
     @Override
     public Vector3 reflect(Vector3 position, Vector3 incoming){
+        //calculate he normal for the point the ray hit
         Vector3 normal = new Vector3(
                 position.x - this.position.x,
                 position.y - this.position.y,
@@ -30,6 +34,7 @@ public class Sphere extends Thing{
         );
     }
 
+    //this function calculates how fare a ray has to ravel to hit this object or if it evan hits
     @Override
     public float findIntersection(Vector3 origin, Vector3 direction){
         float t1;

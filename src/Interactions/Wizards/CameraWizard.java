@@ -3,19 +3,19 @@ package Interactions.Wizards;
 import Interactions.PanelInteract;
 import RayTrasing.Camera;
 import RayTrasing.GeneralStuff.Vector3;
-import RayTrasing.Things.Sphere;
-import RayTrasing.Things.Thing;
 
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
+//this class is the panel that the user can define the information to the camera
 public class CameraWizard extends Wizard{
 
     PanelInteract manager;
 
     ArrayList<JTextField> inputs = new ArrayList<>();
 
+    //constructor
     public CameraWizard(PanelInteract manager){
 
         this.manager = manager;
@@ -26,31 +26,33 @@ public class CameraWizard extends Wizard{
         this.setLayout(new GridLayout(6,7));
         this.getContentPane().setBackground(Color.red);
 
-        this.add(new JLabel("position"));
+        //row 1
+        this.add(new JLabel("position:"));
 
-        this.add(new JLabel("X: "));
+        this.add(new JLabel("X:"));
         JTextField posXT = new JTextField(5);
         this.add(posXT);
         inputs.add(posXT);
 
-        this.add(new JLabel("Y: "));
+        this.add(new JLabel("Y:"));
         JTextField posYT = new JTextField(5);
         this.add(posYT);
         inputs.add(posYT);
 
-        this.add(new JLabel("Z: "));
+        this.add(new JLabel("Z:"));
         JTextField posZT = new JTextField(5);
         this.add(posZT);
         inputs.add(posZT);
 
-        this.add(new JLabel("Pixels: "));
+        //row 2
+        this.add(new JLabel("Pixels:"));
 
-        this.add(new JLabel(("X: ")));
+        this.add(new JLabel(("X:")));
         JTextField pixelsX = new JTextField(5);
         this.add(pixelsX);
         inputs.add(pixelsX);
 
-        this.add(new JLabel("Y: "));
+        this.add(new JLabel("Y:"));
         JTextField pixelsY = new JTextField(5);
         this.add(pixelsY);
         inputs.add(pixelsY);
@@ -60,24 +62,25 @@ public class CameraWizard extends Wizard{
         this.add(CameraWidth);
         inputs.add(CameraWidth);
 
-        this.add(new JLabel("color"));
+        //row 3
+        this.add(new JLabel("color:"));
 
-        this.add(new JLabel("R: "));
+        this.add(new JLabel("R:"));
         JTextField R = new JTextField(5);
         this.add(R);
         inputs.add(R);
 
-        this.add(new JLabel("G: "));
+        this.add(new JLabel("G:"));
         JTextField G = new JTextField(5);
         this.add(G);
         inputs.add(G);
 
-        this.add(new JLabel("B: "));
+        this.add(new JLabel("B:"));
         JTextField B = new JTextField(5);
         this.add(B);
         inputs.add(B);
 
-
+        //row 4
         this.add(new JLabel(""));
         this.add(new JLabel(""));
         this.add(new JLabel(""));
@@ -86,7 +89,7 @@ public class CameraWizard extends Wizard{
         this.add(new JLabel(""));
         this.add(new JLabel(""));
 
-
+        //row 5
         this.add(new JLabel(""));
         this.add(new JLabel(""));
         this.add(new JLabel(""));
@@ -95,7 +98,7 @@ public class CameraWizard extends Wizard{
         this.add(new JLabel(""));
         this.add(new JLabel(""));
 
-
+        //row 6
         this.add(new JLabel(""));
         this.add(new JLabel(""));
         this.add(new JLabel(""));
@@ -108,6 +111,7 @@ public class CameraWizard extends Wizard{
 
     }
 
+    //this function reads the text in the text fields and uses it to define the camera
     public void reade(){
 
         float[] position = new float[3];
@@ -139,7 +143,6 @@ public class CameraWizard extends Wizard{
                     throw new Exception("Invalid color (must be between 0 and 255)");
                 }
             }
-
 
         }catch (Exception e){
             new ErrorScreen(e);

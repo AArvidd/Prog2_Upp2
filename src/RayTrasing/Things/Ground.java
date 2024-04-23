@@ -2,15 +2,18 @@ package RayTrasing.Things;
 
 import RayTrasing.GeneralStuff.Vector3;
 
+//this class contains all the information and code for plains
 public class Ground extends Thing {
 
     private Vector3 color2;
 
+    //constructor
     public Ground (Vector3 position, float reflectivity, Vector3 color1, Vector3 color2){
         super(position, reflectivity, color1);
         this.color2 = color2;
     }
 
+    //calculates the reflection of an incoming ray
     @Override
     public Vector3 reflect(Vector3 position, Vector3 incoming){
 
@@ -25,6 +28,7 @@ public class Ground extends Thing {
         );
     }
 
+    //this function calculates how fare a ray has to ravel to hit this object or if it evan hits
     @Override
     public float findIntersection(Vector3 origin, Vector3 direction){
 
@@ -36,6 +40,7 @@ public class Ground extends Thing {
         return length;
     }
 
+    //returns the color of the point that is hit
     @Override
     public Vector3 getColor(Vector3 intersection){
 
@@ -49,7 +54,7 @@ public class Ground extends Thing {
         boolean X = ((intersection.x % (size * 2)) - size) < 0;
         boolean Y = ((intersection.y % (size * 2)) - size) < 0;
 
-        return X == Y ? color1 : color2;
+        return X == Y ? color1 : color2;//if ells
     }
 
 }

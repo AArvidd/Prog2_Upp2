@@ -5,14 +5,15 @@ import java.io.File;
 import java.util.ArrayList;
 import java.awt.image.BufferedImage;
 
-import RayTrasing.GeneralStuff.Vector3;
 import RayTrasing.Things.*;
 
+//this class manages the saving of teh image the camera generates
 public class MainSystem {
 
     private BufferedImage image;
     Camera main;
 
+    //constructor, image generator and image saving
     public MainSystem(ArrayList<Thing> sean, Camera camera){
 
         this.main = camera;
@@ -29,6 +30,7 @@ public class MainSystem {
 
     }
 
+    //return the image generated if needed elsewhere
     public BufferedImage getImage(){
         return image;
     }

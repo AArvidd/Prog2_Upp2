@@ -5,10 +5,12 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+//this class is the error screen if there was a problem width the information inputted in the wizards
 public class ErrorScreen extends JFrame implements MouseListener {
 
     private int size = 300;
 
+    //constructor
     public ErrorScreen(Exception e){
         this.setTitle("Error");
         this.setBounds(500, 300, size, size);

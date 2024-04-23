@@ -8,6 +8,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
+//this class is the panel that the user can define the information to a sphere
 public class SphereWizard extends Wizard {
 
 
@@ -15,6 +16,7 @@ public class SphereWizard extends Wizard {
 
     ArrayList<JTextField> inputs = new ArrayList<>();
 
+    //constructor
     public SphereWizard(PanelInteract manager){
 
         this.manager = manager;
@@ -25,31 +27,33 @@ public class SphereWizard extends Wizard {
         this.setLayout(new GridLayout(6,7));
         this.getContentPane().setBackground(Color.red);
 
-        this.add(new JLabel("position"));
+        //row 1
+        this.add(new JLabel("position:"));
 
-        this.add(new JLabel("X: "));
+        this.add(new JLabel("X:"));
         JTextField posXT = new JTextField(5);
         this.add(posXT);
         inputs.add(posXT);
 
-        this.add(new JLabel("Y: "));
+        this.add(new JLabel("Y:"));
         JTextField posYT = new JTextField(5);
         this.add(posYT);
         inputs.add(posYT);
 
-        this.add(new JLabel("Z: "));
+        this.add(new JLabel("Z:"));
         JTextField posZT = new JTextField(5);
         this.add(posZT);
         inputs.add(posZT);
 
+        //raw 2
         this.add(new JLabel(""));
 
-        this.add(new JLabel(("radius")));
+        this.add(new JLabel(("radius:")));
         JTextField radiusT = new JTextField(5);
         this.add(radiusT);
         inputs.add(radiusT);
 
-        this.add(new JLabel("reflectivity"));
+        this.add(new JLabel("reflectivity:"));
         JTextField reflectivityT = new JTextField(5);
         this.add(reflectivityT);
         inputs.add(reflectivityT);
@@ -57,24 +61,25 @@ public class SphereWizard extends Wizard {
         this.add(new JLabel(""));
         this.add(new JLabel(""));
 
-        this.add(new JLabel("color"));
+        //row 3
+        this.add(new JLabel("color:"));
 
-        this.add(new JLabel("R: "));
+        this.add(new JLabel("R:"));
         JTextField R = new JTextField(5);
         this.add(R);
         inputs.add(R);
 
-        this.add(new JLabel("G: "));
+        this.add(new JLabel("G:"));
         JTextField G = new JTextField(5);
         this.add(G);
         inputs.add(G);
 
-        this.add(new JLabel("B: "));
+        this.add(new JLabel("B:"));
         JTextField B = new JTextField(5);
         this.add(B);
         inputs.add(B);
 
-
+        //row 4
         this.add(new JLabel(""));
         this.add(new JLabel(""));
         this.add(new JLabel(""));
@@ -83,7 +88,7 @@ public class SphereWizard extends Wizard {
         this.add(new JLabel(""));
         this.add(new JLabel(""));
 
-
+        //row 5
         this.add(new JLabel(""));
         this.add(new JLabel(""));
         this.add(new JLabel(""));
@@ -92,7 +97,7 @@ public class SphereWizard extends Wizard {
         this.add(new JLabel(""));
         this.add(new JLabel(""));
 
-
+        //row 6
         this.add(new JLabel(""));
         this.add(new JLabel(""));
         this.add(new JLabel(""));
@@ -104,6 +109,7 @@ public class SphereWizard extends Wizard {
         this.setVisible(true);
     }
 
+    //this function reads the text in the text fields and uses it to define a sphere
     public void reade(){
 
         float[] position = new float[3];
@@ -136,7 +142,11 @@ public class SphereWizard extends Wizard {
             return;
         }
 
-        manager.addThin(new Sphere(new Vector3(position[0], position[1], position[2]), radius, reflectivity, new Vector3(color[0], color[1], color[2])));
+        manager.addThin(new Sphere(
+                new Vector3(position[0], position[1], position[2]),
+                radius, reflectivity,
+                new Vector3(color[0], color[1], color[2])
+        ));
         this.setVisible(false);
 
     }
