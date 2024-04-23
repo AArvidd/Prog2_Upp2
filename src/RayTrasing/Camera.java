@@ -7,6 +7,7 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.awt.Color;
 
+//this class controls the generation of all initial rays and the final image
 public class Camera {
 
     private Vector3 position;
@@ -24,10 +25,13 @@ public class Camera {
 
     private Vector3 skyboxColor;
 
+    //the objects in teh scene that can bee rendered
     ArrayList<Thing> visible = new ArrayList<>();
 
+    //output image
     private BufferedImage image;
 
+    //constructor
     public Camera(Vector3 position, int pixelWidth, int pixelHeight, float width, ArrayList<Thing> sean, Vector3 skyboxColor) {
         this.position = position;
 
@@ -46,6 +50,7 @@ public class Camera {
         pixelPoint();
     }
 
+    //this function calculates the directions all initial rays have
     private void pixelPoint() {
 
         Vector3[][] pixelGrid = new Vector3[pixelWidth][pixelHeight];
@@ -67,10 +72,11 @@ public class Camera {
 
     }
 
+    //this function manages the generation of the image
     public BufferedImage makeImage() {
         for (int x = 0; x < pixelWidth; x++) {
-            for (int y = 0; y < pixelWidth; y++) {
-                Ray current = new Ray(3, this.position, pixelGrid[x][y], visible,this);
+            for (int y = 0; y < pixelHeight; y++) {
+                Ray current = new Ray(3, this.position, pixelGrid[x][y], visible, this);
                 Vector3 color = current.castRay();
                 Color temp = new Color((int)color.x, (int)color.y, (int)color.z);
                 image.setRGB(x, y, temp.getRGB());
@@ -81,10 +87,12 @@ public class Camera {
 
     }
 
+    //returns the skybox color of the camera
     public Vector3 getSkyboxColor() {
         return skyboxColor;
     }
 
+    //adds a scene fore if scene is generated later
     public void addScene(ArrayList<Thing> scene){
         this.visible = scene;
     }

@@ -20,7 +20,7 @@ public class CameraWizard extends Wizard{
 
         this.manager = manager;
 
-        this.setTitle("Sphere wizard");
+        this.setTitle("Camera wizard");
         this.setBounds(100, 100, 750, 300);
         this.setResizable(false);
         this.setLayout(new GridLayout(6,7));
@@ -123,14 +123,18 @@ public class CameraWizard extends Wizard{
             pixelsX = Integer.parseInt(inputs.get(3).getText());
             pixelsY = Integer.parseInt(inputs.get(4).getText());
 
+            if(pixelsX <= 0 || pixelsY <= 0){
+                throw new Exception("Invalid pixel width (must be more than 0)");
+            }
+
             width = Float.parseFloat(inputs.get(5).getText());
 
-            if(width < 0){
+            if(width <= 0){
                 throw new Exception("Invalid width (must be mor than 0)");
             }
 
             for(int i = 0; i < color.length; i++){
-                color[i] = Integer.parseInt(inputs.get(i+5).getText());
+                color[i] = Integer.parseInt(inputs.get(i+6).getText());
                 if (color[i] < 0 || color[i] > 255){
                     throw new Exception("Invalid color (must be between 0 and 255)");
                 }

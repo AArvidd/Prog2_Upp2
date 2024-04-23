@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73c417e7-5250-41bb-85e3-a712218b4790" name="Changes" comment="added so that resolt si shown">
-      <change afterPath="$PROJECT_DIR$/src/Interactions/Wizards/CameraWizard.java" afterDir="false" />
+    <list default="true" id="73c417e7-5250-41bb-85e3-a712218b4790" name="Changes" comment="doen whid system to let users create things in the scean.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interactions/InteractSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/InteractSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interactions/PanelInteract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/PanelInteract.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interactions/ResultScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/ResultScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interactions/Wizards/ErrorScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/Wizards/ErrorScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interactions/Wizards/PlaneWizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/Wizards/PlaneWizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interactions/Wizards/SphereWizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/Wizards/SphereWizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interactions/myPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/ResultPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interactions/Wizards/CameraWizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/Wizards/CameraWizard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RayTrasing/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RayTrasing/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RayTrasing/MainSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RayTrasing/MainSystem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +108,8 @@
       <workItem from="1713167651276" duration="4936000" />
       <workItem from="1713267659551" duration="4910000" />
       <workItem from="1713363275400" duration="1034000" />
-      <workItem from="1713773022102" duration="3077000" />
+      <workItem from="1713773022102" duration="4217000" />
+      <workItem from="1713854274201" duration="2856000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -189,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713273977609</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="doen whid system to let users create things in the scean.">
+      <option name="closed" value="true" />
+      <created>1713776314558</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713776314558</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +207,7 @@
     <MESSAGE value="made a system to generata a sphere thrue inputs" />
     <MESSAGE value="Compleated SphereWizard and added PlaneWizard and made the panels run the ray tracing program" />
     <MESSAGE value="added so that resolt si shown" />
-    <option name="LAST_COMMIT_MESSAGE" value="added so that resolt si shown" />
+    <MESSAGE value="doen whid system to let users create things in the scean." />
+    <option name="LAST_COMMIT_MESSAGE" value="doen whid system to let users create things in the scean." />
   </component>
 </project>
