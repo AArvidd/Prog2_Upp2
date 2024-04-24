@@ -34,7 +34,7 @@ public class Ground extends Thing {
 
         float length = (position.z - origin.z) / direction.z;
 
-        if(length <= 0)
+        if(length <= 0.1f)
             length = -1;
 
         return length;

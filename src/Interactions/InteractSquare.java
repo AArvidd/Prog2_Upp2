@@ -9,11 +9,13 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+//this class is the button that lets the user chose options
 public class InteractSquare extends JPanel implements MouseListener {
 
     int choice;
     PanelInteract manager;
 
+    //constructor
     public InteractSquare(String text, int choice, PanelInteract manager){
 
         this.choice = choice;
@@ -26,13 +28,14 @@ public class InteractSquare extends JPanel implements MouseListener {
 
     }
 
+    //mouse listener fore when the user clicks the button and what the button should due
     @Override
     public void mouseClicked(MouseEvent e) {
         switch (choice) {
             case 0 -> manager.run();
-            case 1 -> new SphereWizard(manager);
-            case 2 -> new PlaneWizard(manager);
-            case 3 -> new CameraWizard(manager);
+            case 1 -> new CameraWizard(manager);
+            case 2 -> new SphereWizard(manager);
+            case 3 -> new PlaneWizard(manager);
         }
     }
 

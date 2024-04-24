@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73c417e7-5250-41bb-85e3-a712218b4790" name="Changes" comment="bugfixes and added comments">
+    <list default="true" id="73c417e7-5250-41bb-85e3-a712218b4790" name="Changes" comment="minor fixes and added comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interactions/Wizards/CameraWizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/Wizards/CameraWizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interactions/Wizards/Confirmation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/Wizards/Confirmation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interactions/Wizards/ErrorScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/Wizards/ErrorScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interactions/Wizards/PlaneWizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/Wizards/PlaneWizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interactions/Wizards/SphereWizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/Wizards/SphereWizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RayTrasing/MainSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RayTrasing/MainSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RayTrasing/Ray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RayTrasing/Ray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interactions/InteractSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/InteractSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interactions/PanelInteract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/PanelInteract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interactions/ResultPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/ResultPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interactions/ResultScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interactions/ResultScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RayTrasing/Things/Ground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RayTrasing/Things/Ground.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RayTrasing/Things/Sphere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RayTrasing/Things/Sphere.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RayTrasing/Things/Thing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RayTrasing/Things/Thing.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +112,8 @@
       <workItem from="1713363275400" duration="1034000" />
       <workItem from="1713773022102" duration="4217000" />
       <workItem from="1713854274201" duration="3623000" />
-      <workItem from="1713872608201" duration="4232000" />
+      <workItem from="1713872608201" duration="4352000" />
+      <workItem from="1713964176636" duration="2472000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -207,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713857941912</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="minor fixes and added comments">
+      <option name="closed" value="true" />
+      <created>1713876984447</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1713876984447</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +229,7 @@
     <MESSAGE value="added so that resolt si shown" />
     <MESSAGE value="doen whid system to let users create things in the scean." />
     <MESSAGE value="bugfixes and added comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="bugfixes and added comments" />
+    <MESSAGE value="minor fixes and added comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor fixes and added comments" />
   </component>
 </project>
